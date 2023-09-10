@@ -17,23 +17,25 @@ namespace Wasserfall
 
         private string name;
 
-        public void befüllen(int menge)
+        private int wasserStand = 10;
+
+       private int befüllen (int menge)
+
         {
-            wasserStand 
+           menge = wasserStand + 1;
+            return menge;
+        }
+        public int entnehmen(int menge)
+        {
+            menge = wasserStand - 1;
+            return menge;
+
         }
 
-        public void entnehmen(int menge)
-        {
-
+        public int entleeren(int menge) 
+        { 
+            menge = 0;
+            return menge;
         }
-
-        public void entleeren() { }
-
-        public void setName(string neuerName)
-        {
-            this.name = neuerName;
-        }
-
-
     }
 }
