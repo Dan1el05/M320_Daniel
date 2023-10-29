@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DocumentFormat.OpenXml.Drawing.Charts;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,7 @@ namespace Aufgabe07GeometrischeFiguren
        
         public void TesteGleicheSeiten()
         {
-            if (height == width)
+            if (Height == Width)
             {
                 Console.WriteLine("Es ist ein Quadrat.");
             }

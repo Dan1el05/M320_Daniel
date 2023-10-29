@@ -10,11 +10,58 @@ namespace Aufgabe07GeometrischeFiguren
     internal class Dreieck : Figur, IRotieren
     {
 
-        public int height { get; set; }
-        public int a { get; set; }
-        public int b { get; set; }
-        public int c { get; set; }
+        private int height;
+        private int a;
+        private int b;
+        private int c;
 
+        public int Height
+        {
+            get { return height; }
+            set
+            {
+                if (value > 0)
+                    height = value;
+                else
+                    Console.WriteLine("Ungültiger Wert für Höhe. Höhe muss positiv sein.");
+            }
+        }
+
+        public int A
+        {
+            get { return a; }
+            set
+            {
+                if (value > 0)
+                    a = value;
+                else
+                    Console.WriteLine("Ungültiger Wert für Höhe. Höhe muss positiv sein.");
+            }
+        }
+
+        public int B
+        {
+            get { return b; }
+            set
+            {
+                if (value > 0)
+                    b = value;
+                else
+                    Console.WriteLine("Ungültiger Wert für Höhe. Höhe muss positiv sein.");
+            }
+        }
+
+        public int C
+        {
+            get { return c; }
+            set
+            {
+                if (value > 0)
+                    c = value;
+                else
+                    Console.WriteLine("Ungültiger Wert für Höhe. Höhe muss positiv sein.");
+            }
+        }
 
         public Dreieck(float x, float y, int height, int a, int b, int c) : base(x, y)
         {
@@ -43,7 +90,6 @@ namespace Aufgabe07GeometrischeFiguren
 
         public void Rotiern()
         {
-            // Drehe das Dreieck um 90° im Uhrzeigersinn (Tausche die Koordinaten der Eckpunkte)
             float originalX = x;
             float originalY = y;
 

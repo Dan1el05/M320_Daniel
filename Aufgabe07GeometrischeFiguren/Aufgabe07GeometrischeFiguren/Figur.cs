@@ -38,7 +38,7 @@ namespace Aufgabe07GeometrischeFiguren
         public virtual void verschieben()
         {
             Random random = new Random();
-            x += random.Nextfloat() * 400 - 200; 
+            x += (float)(random.NextDouble() * 90.0 + 10.0);
         }
 
         public virtual void PrintArea()

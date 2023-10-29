@@ -8,13 +8,34 @@ namespace Aufgabe07GeometrischeFiguren
 {
     internal class Rechteck : Figur, IRotieren
     {
-        public int height { get; set; }
-        public int width { get; set; }
+        private int height { get; set; }
+        private int width { get; set; }
 
+        public int Height
+        {
+            get { return height; }
+            set
+            {
+                if (value > 0)
+                    height = value;
+                else
+                    Console.WriteLine("Ungültiger Wert für Höhe. Höhe muss positiv sein.");
+            }
+        }
 
+        public int Width
+        {
+            get { return width; }
+            set
+            {
+                if (value > 0)
+                    width = value;
+                else
+                    Console.WriteLine("Ungültiger Wert für Höhe. Höhe muss positiv sein.");
+            }
+        }
 
-
-        public Rechteck(float x, float y, int height, int width) : base(x, y,)
+        public Rechteck(float x, float y, int height, int width) : base(x, y)
         {
             this.height = height;
             this.width = width;
@@ -31,7 +52,10 @@ namespace Aufgabe07GeometrischeFiguren
         }
 
 
-        public void printPossition() { }
+        public  void printPossition() 
+        { 
+            base.PrintPossition();
+        }
 
         public void Rotiern()
         {
