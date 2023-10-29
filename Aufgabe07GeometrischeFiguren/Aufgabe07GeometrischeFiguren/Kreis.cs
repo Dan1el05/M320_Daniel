@@ -37,7 +37,7 @@ namespace Aufgabe07GeometrischeFiguren
             area = pi * (float)Math.Pow(radius, 2);
         }
 
-        public override void verschieben()
+        public override void Verschieben()
         {
             Random random = new Random();
             centreX += (float)(random.NextDouble() * 90.0 + 10.0);

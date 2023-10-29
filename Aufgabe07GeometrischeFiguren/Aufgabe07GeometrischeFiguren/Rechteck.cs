@@ -44,7 +44,7 @@ namespace Aufgabe07GeometrischeFiguren
 
         public void verschieben() 
         {
-            base.verschieben();
+            base.Verschieben();
         }
         public override void PrintArea() 
         {

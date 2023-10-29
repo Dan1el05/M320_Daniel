@@ -74,7 +74,7 @@ namespace Aufgabe07GeometrischeFiguren
 
         public virtual void verschieben() 
         {
-            base.verschieben();
+            base.Verschieben();
         }
 
 

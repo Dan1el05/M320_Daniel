@@ -37,7 +37,7 @@ namespace Aufgabe07GeometrischeFiguren
             base.printPossition();
         }
 
-        public void verschieben() 
+        public void Verschieben() 
         { 
             base.verschieben(); 
         }

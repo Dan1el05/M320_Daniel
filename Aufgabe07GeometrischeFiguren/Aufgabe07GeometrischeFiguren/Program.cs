@@ -31,14 +31,14 @@
             {     
                 dreieck.Rotiern();
                 dreieck.PrintArea();
-                dreieck.verschieben();
+                dreieck.Verschieben();
                  dreieck.PrintPossition();
             }
             foreach (Kreis kreis in kreise)
             {
                 
                 kreis.PrintArea();
-                kreis.verschieben();
+                kreis.Verschieben();
                 kreis.PrintPossition();
             }
             foreach (Rechteck rechteck in rechtecke)
@@ -46,7 +46,7 @@
 
                 rechteck.Rotiern();
                 rechteck.PrintArea();
-                rechteck.verschieben();
+                rechteck.Verschieben();
                 rechteck.PrintPossition();
             }
 
@@ -55,7 +55,7 @@
                 quadrat.TesteGleicheSeiten();
                 quadrat.Rotiern();
                 quadrat.PrintArea();
-                quadrat.verschieben();
+                quadrat.Verschieben();
                 quadrat.PrintPossition();
             }
 

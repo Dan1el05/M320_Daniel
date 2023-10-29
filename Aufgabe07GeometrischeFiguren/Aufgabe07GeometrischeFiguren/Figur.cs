@@ -9,7 +9,6 @@ namespace Aufgabe07GeometrischeFiguren
 {
     internal class Figur
     {
-        private float area1;
 
         public float Area { get; set; }
 
@@ -35,7 +34,7 @@ namespace Aufgabe07GeometrischeFiguren
         {
         }
 
-        public virtual void verschieben()
+        public virtual void Verschieben()
         {
             Random random = new Random();
             x += (float)(random.NextDouble() * 90.0 + 10.0);
