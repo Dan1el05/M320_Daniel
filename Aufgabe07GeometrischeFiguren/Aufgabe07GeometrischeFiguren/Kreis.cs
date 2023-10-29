@@ -51,6 +51,7 @@ namespace Aufgabe07GeometrischeFiguren
         public override void PrintPossition()
         {
             Console.WriteLine("Meine x und y Koordinate ist an folgender Stelle: x Achse: {0}, y Achse: {1}", centreX, centreY);
+            Console.WriteLine("");
         }
       
     

@@ -50,6 +50,7 @@ namespace Aufgabe07GeometrischeFiguren
        public virtual void  PrintPossition()
       {
          Console.WriteLine("Meine x und y Koordinate ist an folgender Stelle: x Achse: {0}, y Achse {1}:", x, y);
+         Console.WriteLine("");
       }
     }
 }

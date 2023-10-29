@@ -58,7 +58,7 @@
                 quadrat.Verschieben();
                 quadrat.PrintPossition();
             }
-
+            // Ich kann die Methode für die Rotation aufrufen
         }
     }
 }

@@ -52,11 +52,14 @@ namespace Aufgabe07GeometrischeFiguren
         }
 
 
-        public  void printPossition() 
-        { 
-            base.PrintPossition();
+        public override void PrintPossition() 
+        {
+            Console.WriteLine("Meine x und y Koordinaten von obere Linke Seite ist x: {0} und y: {1}", x, y);
+            y += height;
+            x += width;
+            Console.WriteLine("Untere Ecke ist die Koordinate x: {0} und y: {1}", x, y);
+            Console.WriteLine("");
         }
-
         public void Rotiern()
         {
 

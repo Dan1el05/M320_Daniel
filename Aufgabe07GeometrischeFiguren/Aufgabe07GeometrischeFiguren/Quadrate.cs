@@ -34,7 +34,7 @@ namespace Aufgabe07GeometrischeFiguren
 
         public virtual void PrintPossition() 
         { 
-            base.printPossition();
+            base.PrintPossition();
         }
 
         public void Verschieben() 
