@@ -1,0 +1,55 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace String_Converter
+{
+    public class NumberConverter
+    {
+
+        StringConverter _stringConverter;
+
+        public NumberConverter(StringConverter stringConverter = null)
+        {
+            _stringConverter = stringConverter;
+        }
+
+        public int RoundUp(double value)
+        {
+            if (value < 0 | (int)value == 0)
+            {
+                return (int)value;
+            }
+
+            return (int)value + 1;
+            // TODO: Implement rounding...
+            // You must not use other methods to implement this method.
+            return 0;
+        }
+
+        public int RoundDown(double value)
+        {
+            // TODO: Implement rounding...
+            // You must not use other methods to implement this method.
+            return (int)value;
+        }
+
+
+        public int RoundToPowerOfTen(float value, int precisionExponent = 1)
+        {
+            // TODO: Implement rounding...
+            // Math.Round() may be used here
+            return 0;
+        }
+
+        public int RoundToPowerOfTen(string numericString, int precisionExponent = 1)
+        {
+            // TODO: Implement rounding...
+            // Have a look at the StringConverter utility in this project!
+            return 0;
+        }
+
+    }
+}

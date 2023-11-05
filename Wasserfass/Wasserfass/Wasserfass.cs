@@ -8,45 +8,45 @@ namespace Wasserfass
 {
     internal class Wasserfass
     {
-        private int minimalPegel { get; }
-        private int maximalPegel { get; }
-        public int fuellstand { get; }
-        public int kapizitaet { get; }
+        private int MinimalPegel { get; }
+        private int MaximalPegel { get; }
+        public int Fuellstand { get; private set; }
+        public int Kapizitaet { get; }
 
         public Wasserfass(int minimalPegel, int maximalpegel, int fuellstand,  int kapizitaet)
         {
-            this.minimalPegel = minimalPegel;
-            this.maximalPegel = maximalpegel;
-            this.fuellstand = fuellstand;
-            this.kapizitaet = kapizitaet;
+            this.MinimalPegel = minimalPegel;
+            this.MaximalPegel = maximalpegel;
+            this.Fuellstand = fuellstand;
+            this.Kapizitaet = kapizitaet;
         }
-        public void befüllend(int menge, int fuellstand)
+        public void befüllend(int menge)
         {
             if (menge > 0)
             {
-                if (fuellstand + menge <= kapizitaet)
+                if (Fuellstand + menge <= Kapizitaet)
                 {
-                    fuellstand += menge;
+                    Fuellstand += menge;
                 }
             }
         }
 
        
 
-        public void entnehmen(int menge, int fuellstand) 
+        public void entnehmen(int menge) 
         {
             if (menge > 0)
             {
-                if (fuellstand - menge <= kapizitaet)
+                if (Fuellstand - menge <= Kapizitaet)
                 {
-                    fuellstand -= menge;
+                    Fuellstand -= menge;
                 }
             }
 
         }
-        public void entleeren(int fuellstand)
+        public void entleeren()
         {
-            fuellstand = minimalPegel;
+            Fuellstand = MinimalPegel;
         }
 
 

@@ -10,7 +10,7 @@ namespace UebungsaufgabenVererbung
     {
         public double Umsatz {get; set;}
 
-        public Kunde(string name, string vorname, int iDnumber, string key, double umsatz) : base(vorname, name,iDnumber, key) {Umsatz = umsatz)
+        public Kunde(string name, string vorname, int iDnumber, string key, double umsatz) : base(vorname, name,iDnumber, key) { Umsatz = umsatz)
        
 
         public void Kaufe()
