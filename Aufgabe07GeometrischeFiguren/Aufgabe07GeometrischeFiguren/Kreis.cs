@@ -9,24 +9,15 @@ namespace Aufgabe07GeometrischeFiguren
     internal class Kreis : Figur
     {
         private float radius;
+        
 
-        public float Radius
-        {
-            get { return radius; }
-            set
-            {
-                if (value > 0)
-                    radius = value;
-                else
-                    Console.WriteLine("Ungültiger Wert für Höhe. Höhe muss positiv sein.");
-            }
-        }
 
         public float pi { get; set; }
         public float centreX { get; set; }
         public float centreY { get; set; }
 
-
+        public float Radius
+ c
 
         public Kreis( float radius, float centreX, float centreY) : base(centreX,centreY)
         {

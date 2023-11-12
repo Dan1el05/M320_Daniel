@@ -15,7 +15,7 @@
             Quadrate quadrat1 = new Quadrate(100,100, 10, 10);
             Dreieck dreieck2 = new Dreieck(100, 100, 20, 30, 25, 10);
             Rechteck rechteck2 = new Rechteck(100, 100, 50, 80);
-            Kreis kreis2 = new Kreis(6, 100, 100);
+            Kreis kreis2 = new Kreis(-6, 100, 100);
             Quadrate quadrat2 = new Quadrate(100, 100, 40, 40);
             dreiecke.Add(dreieck1);
             rechtecke.Add(rechteck1);
