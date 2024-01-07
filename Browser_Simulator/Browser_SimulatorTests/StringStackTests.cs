@@ -22,14 +22,7 @@ namespace Browser_Simulator.Tests
 
             Assert.AreEqual(3, actual: stack.Count);
             Assert.AreEqual("B", stack.Peek());
-        }
-
-        [TestMethod()]
-        public void Pop_PeekTest()
-        {
-            StringStack stack = new StringStack(3);
-
-            string popped = stack.Pop();
+       string popped = stack.Pop();
             Assert.AreEqual("B", popped);
             Assert.AreEqual(1, stack.Count);
             Assert.AreEqual("A", stack.Peek());
