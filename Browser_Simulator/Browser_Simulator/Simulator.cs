@@ -17,9 +17,17 @@ namespace Browser_Simulator
             string url =  Console.ReadLine();
                 if(url == "e") 
                 {
+                    case "e":
+                        break;
+                    case "p":
+                        Undo();
+                        break;
+
+                    default:
+                        BrowseURL(url);
                     break;
                 }
-            BrowseURL(url);
+
 
             }
 

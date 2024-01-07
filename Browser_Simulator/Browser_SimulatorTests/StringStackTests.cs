@@ -20,7 +20,7 @@ namespace Browser_Simulator.Tests
             stack.Push("A");
             stack.Push("B");
 
-            Assert.AreEqual(2, stack.Count);
+            Assert.AreEqual(3, actual: stack.Count);
             Assert.AreEqual("B", stack.Peek());
         }
 
