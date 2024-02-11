@@ -25,7 +25,6 @@ namespace UebungAuto
             for (int i = 0; i < 7; i++) 
             {
                 Console.WriteLine("Motor Regeln");
-
             }
             Anlasser anlasser = new Anlasser();
             anlasser.Stopen();
