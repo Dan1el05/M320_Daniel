@@ -17,7 +17,6 @@ namespace UebungAuto
             benzinpumpe.Pumpen();
             anlasser.Starten();
             motor.Regeln();
-           
 
         }
 
@@ -26,10 +25,10 @@ namespace UebungAuto
             for (int i = 0; i < 7; i++) 
             {
                 Console.WriteLine("Motor Regeln");
-                Anlasser anlasser = new Anlasser();
-                anlasser.Stopen();
+
             }
-            
+            Anlasser anlasser = new Anlasser();
+            anlasser.Stopen();
         }
     }
 }
