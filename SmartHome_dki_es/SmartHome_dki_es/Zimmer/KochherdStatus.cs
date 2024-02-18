@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SmartHome_dki_es.Zimmer.Zimmer
+namespace SmartHome_dki_es.Zimmer
 {
-    internal class Schlaffzimmer : Zimmern
+    enum KochherdStatus
     {
-        public DateTime Weckzeit { get; set; }
+        Aus,
+        An
     }
 }

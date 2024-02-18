@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SmartHome_dki_es.Zimmer
+﻿namespace SmartHome_dki_es.Zimmer
 {
-    internal class Zimmer
+    class Zimmern : IZimmer
     {
-        public Zimmer() { }
-       
-        
+        public string Name { get; set; }
+        public double VorgegebeneTemperatur { get; set; }
+        public bool PersonImZimmer { get; set; }
+
+        public virtual void VerarbeiteWetterdaten(double aussenTemperatur, double windgeschwindigkeit)
+        {
+            Console.WriteLine($"Zimmer - {Name}, VorgegebeneTemperatur: {VorgegebeneTemperatur}°C, Person im Zimmer: {PersonImZimmer}");
+        }
     }
 }

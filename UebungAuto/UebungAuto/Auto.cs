@@ -13,9 +13,6 @@ namespace UebungAuto
             Console.WriteLine("Auto Anlassen");
             Motor motor = new Motor();
             motor.Starten();
-           
-
-
         }
     }
 }

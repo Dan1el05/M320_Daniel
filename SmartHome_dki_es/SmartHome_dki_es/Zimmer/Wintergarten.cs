@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace SmartHome_dki_es.Zimmer.Zimmer
 {
-    internal class Wintergarten : Zimmer
+    internal class Wintergarten : Zimmern
     {
+        
+        public double Sonneneinstrahlung { get; set; }
     }
 }
