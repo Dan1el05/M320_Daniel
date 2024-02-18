@@ -8,10 +8,15 @@ namespace SmartHome_dki_es.Aktoren
 {
     internal class Jalousiesteuerung : IAktorSteuerung
 
+       
     {
         private readonly double VorgegebeneTemperatur;
         private string zimmerName;
 
+        /// <summary>
+        /// Zimmer Name
+        /// </summary>
+        /// <param name="zimmerName"></param>
         public Jalousiesteuerung(string zimmerName)
         {
             this.zimmerName = zimmerName;
@@ -19,6 +24,12 @@ namespace SmartHome_dki_es.Aktoren
 
         public object Name { get; private set; }
 
+        /// <summary>
+        /// Zimmertemperatur regeln mit Steuere
+        /// </summary>
+        /// <param name="aussenTemperatur"></param>
+        /// <param name="windgeschwindigkeit"></param>
+        /// <param name="personImZimmer"></param>
         public void Steuere(double aussenTemperatur, double windgeschwindigkeit, bool personImZimmer)
         {
             if (aussenTemperatur > VorgegebeneTemperatur && !personImZimmer)

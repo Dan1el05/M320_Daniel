@@ -9,6 +9,9 @@ namespace SmartHome_dki_es.Aktoren
 {
     internal class Heizungsventil : IAktorSteuerung
     {
+        /// <summary>
+        /// Heizungsventil öffenen wenn Bedingung erfüllt
+        /// </summary>
         private readonly double VorgegebeneTemperatur;
         private string zimmerName;
 

@@ -12,8 +12,12 @@ namespace SmartHome_dki_es.Zimmer
     private List<Heizungsventil> heizungsVentile;
     private List<Jalousiesteuerung> jalousieSteuerungen;
     private List<MarkisenSteuerungDecorator> markisenSteuerungen;
- 
-    public void WetterSensorDecorator()
+
+        public string Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public double VorgegebeneTemperatur { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public bool PersonImZimmer { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        public void WetterSensorDecorator()
     {
         this.heizungsVentile = new List<Heizungsventil>();
         this.jalousieSteuerungen = new List<Jalousiesteuerung>();
@@ -52,6 +56,11 @@ namespace SmartHome_dki_es.Zimmer
             markise.VerarbeiteWetterdaten(aussenTemperatur, windgeschwindigkeit);
         }
     }
+
+        public void VerarbeiteWetterdaten(double aussenTemperatur, double windgeschwindigkeit)
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }

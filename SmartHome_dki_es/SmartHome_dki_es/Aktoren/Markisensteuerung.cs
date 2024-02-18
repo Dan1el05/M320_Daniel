@@ -18,6 +18,12 @@ namespace SmartHome_dki_es.Aktoren
 
         public object Name { get; private set; }
 
+        /// <summary>
+        /// Mit Steuere MarkisenSteuerung regeln
+        /// </summary>
+        /// <param name="aussenTemperatur"></param>
+        /// <param name="windgeschwindigkeit"></param>
+        /// <param name="personImZimmer"></param>
         public void Steuere(double aussenTemperatur, double windgeschwindigkeit, bool personImZimmer)
         {
             if (aussenTemperatur > VorgegebeneTemperatur && windgeschwindigkeit <= 30)

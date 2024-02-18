@@ -8,6 +8,9 @@ namespace SmartHome_dki_es.Zimmer
 {
     internal class RgbColor
     {
+        /// <summary>
+        /// Gibt die Farbe Ambientbeleuchtung als RBG wert zurück
+        /// </summary>
         public int Red{get; set;}
         public int Green{get; set;}
         public int Blue{get; set;}

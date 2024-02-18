@@ -9,12 +9,16 @@ using System.Xml.Linq;
 namespace SmartHome_dki_es.Zimmer.Zimmer
 {
     internal class Kueche : Zimmern
-    { 
-        
-               /// <summary>
-               /// Gibt den Status des Herds in der Küche zurück oder legt diesen fest.
-               /// </summary>
-             public KochherdStatus Kochherd { get; set; }
+    {
+        public Kueche(string Name, double VorgegebeneTemperatur, bool PersonImZimmer) : base(Name, VorgegebeneTemperatur, PersonImZimmer)
+        {
+        }
+
+
+        /// <summary>
+        /// Gibt den Status des Herds in der Küche zurück oder legt diesen fest.
+        /// </summary>
+        public KochherdStatus Kochherd { get; set; }
     }
 
 }
