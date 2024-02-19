@@ -15,8 +15,6 @@ namespace SmartHome_dki_es.Zimmer.Zimmer
         /// <summary>
         /// Gibt Farbe als Ambinebeleuchtung zurück
         /// </summary>
-        public int AmbientebeleuchtungR { get; set; }
-        public int AmbientebeleuchtungG { get; set; }
-        public int AmbientebeleuchtungB { get; set; }
+        public RgbColor Ambientebeleuchtung { get; set; }
     }
 }

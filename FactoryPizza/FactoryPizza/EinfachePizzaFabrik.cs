@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FactoryPizza
 {
-    internal class EinfachePizzaFabrik : Pizza
+    internal class EinfachePizzaFabrik
     {
         public Pizza ErstellePizza(string typ)
         {

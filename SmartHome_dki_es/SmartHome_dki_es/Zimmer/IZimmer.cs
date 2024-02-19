@@ -12,6 +12,6 @@ namespace SmartHome_dki_es.Zimmer
         double VorgegebeneTemperatur { get; set; }
         bool PersonImZimmer { get; set; }
 
-        void VerarbeiteWetterdaten(double aussenTemperatur, double windgeschwindigkeit);
+        void VerarbeiteWetterdaten(double aussenTemperatur, double windgeschwindigkeit, bool PersonImZimmer);
     }
 }

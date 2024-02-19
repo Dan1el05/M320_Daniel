@@ -7,45 +7,22 @@ using System.Threading.Tasks;
 
 namespace SmartHome_dki_es.Aktoren
 {
-    internal class Heizungsventil : IAktorSteuerung
+    internal class Heizungsventil : ZimmerDecorator
     {
-        /// <summary>
-        /// Heizungsventil öffenen wenn Bedingung erfüllt
-        /// </summary>
-        private readonly double VorgegebeneTemperatur;
-        private string zimmerName;
 
-        public Heizungsventil(string zimmerName)
+        public void VerarbeiteWetterdaten(Wetterdaten wetterdaten)
         {
-            this.zimmerName = zimmerName;
-        }
-
-        public object Name { get; private set; }
-
-        public void VerarbeiteWetterdaten(double aussenTemperatur, double windgeschwindigkeit, bool personImZimmer)
-        {
-            if (aussenTemperatur < VorgegebeneTemperatur)
+            if (wetterdaten.Aussentemperatur < VorgegebeneTemperatur)
             {
-                Console.WriteLine($"Heizungsventil in {zimmerName} - wird geheizt.");
+                Console.WriteLine("Das zimmer wird aufgeheizt");
             }
             else
             {
-                Console.WriteLine($"Heizungsventil in {zimmerName} - ausgeschaltet.");
+                Console.WriteLine("Heizung ist ausgeschaltet");
             }
         }
 
-        public void VerarbeiteWetterdaten(double aussenTemperatur, bool personImZimmer)
-        {
-        // Regel: Öffne das Heizungsventil, wenn Aussentemperatur niedriger als vorgegebene Zimmertemperatur und keine Person im Zimmer
-        if (aussenTemperatur < this.VorgegebeneTemperatur && !personImZimmer)
-        {
-            Console.WriteLine($"Heizungsventil in {this.Name} geöffnet - wird geheizt.");
-        }
-        else
-        {
-            Console.WriteLine($"Heizungsventil in {this.Name} geschlossen - es ist warm genug.");
-        }
-        }
+        
     }
 
 }

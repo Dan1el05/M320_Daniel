@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FactoryPizza
 {
-    internal class Pizzeria : Pizza
+    internal class Pizzeria
     {
         EinfachePizzaFabrik fabrik;
 
@@ -15,16 +15,13 @@ namespace FactoryPizza
             this.fabrik = fabrik;
         }
 
-        Pizza bestellePizza(string typ)
+        public Pizza bestellePizza(string typ)
         {
             Pizza pizza = null;
 
             pizza = fabrik.ErstellePizza(typ);
 
-            pizza.vorbereiten();
-            pizza.backen();
-            pizza.schneiden();
-            pizza.einpacken();
+            
             return pizza;
 
         }

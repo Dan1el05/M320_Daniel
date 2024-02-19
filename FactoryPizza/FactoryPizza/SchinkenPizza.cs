@@ -8,6 +8,10 @@ namespace FactoryPizza
 {
     internal class SchinkenPizza : Pizza
     {
+        public override void vorbereiten()
+        {
+            Console.WriteLine("Die Schinkenipizza wird vorbereitet");
+        }
         public SchinkenPizza() { }
     }
 }

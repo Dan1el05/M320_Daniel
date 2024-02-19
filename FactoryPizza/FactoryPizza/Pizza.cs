@@ -8,10 +8,8 @@ namespace FactoryPizza
 {
     internal abstract class Pizza 
     {
-        public void vorbereiten()
-        {
-             Console.WriteLine("Pizza wird vorbereitet");
-        }
+        public abstract void vorbereiten();
+       
         public void backen()
         {
             Console.WriteLine("Pizza wird vorbereitet");

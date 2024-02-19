@@ -4,11 +4,16 @@
     {
         static void Main(string[] args)
         {
-            SalamiPizza pizza = new SalamiPizza();
-            SchinkenPizza schinkenPizza = new SchinkenPizza();
-             
-            EinfachePizzaFabrik einfachePizzaFabrik = new EinfachePizzaFabrik();
-            Pizzeria pizzeria = new Pizzeria();
+            Pizzeria pizzeria  = new Pizzeria(new EinfachePizzaFabrik());
+            
+            var pizza = pizzeria.bestellePizza("Salami");
+
+            pizza.vorbereiten();
+            pizza.schneiden();
+            pizza.backen();
+            pizza.einpacken();
+
+            
 
 
             

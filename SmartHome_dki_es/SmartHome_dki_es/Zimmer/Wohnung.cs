@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SmartHome_dki_es.Zimmer.Zimmer
+namespace SmartHome_dki_es.Zimmer
 {
-    internal class Bad : Zimmern
+    internal class Wohnung
     {
-      public int Feuchtigkeit { get; set; }
     }
 }
