@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SmartHome_dki_es.Zimmer
+namespace M320_SmartHome
 {
-    internal class Wohnung
+    public interface IWettersensor
     {
-
+        public Wetterdaten GetWetterdaten();
     }
 }
